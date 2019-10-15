@@ -1,0 +1,47 @@
+#當日死亡率
+#if {[GETVAL %ATMMDAY]!=[GETVAL Today]} then {
+#SETVAL Today=2
+#}
+
+SETVAL data=[GETVAL year]-[GETVAL month]-[GETVAL day]
+
+if {[GETVAL Today]==0} then {
+SETVAL Today=[GETVAL %ATMMDAY]
+}
+
+if {[GETVAL %ATMMDAY]!=[GETVAL Today]} then {
+SETVAL Day_Total_death=[expr [GETVAL Day_Total_death]+[GETVAL Daily_mortality]]
+SETVAL Day_count=[expr [GETVAL Day_count]+1]
+SETVAL Day_count_Pr=[expr [GETVAL Day_count]-[GETVAL Day_count_01]+[GETVAL Day_count_Pr]]
+SETVAL Day_count_01=[GETVAL Day_count]
+SETVAL Dead_Chicken_Pr=[expr [GETVAL Day_Dead]+[GETVAL Dead_Chicken_Pr]]
+SETVAL Exist_chicken=[expr [GETVAL Total_unmber]-[GETVAL Dead_Chicken_Pr]]
+SETVAL Daily_mortality_Pr=[expr [GETVAL Daily_mortality]+[GETVAL Daily_mortality_Pr]]
+SETVAL Day_Dead=0
+SETVAL Daily_mortality=0
+SETVAL Mortality_rate=[expr [GETVAL Daily_mortality_Pr]/[GETVAL Total_month]]
+#SETVAL test=1
+SETVAL Today=[GETVAL %ATMMDAY]
+
+#當月死亡率
+
+if {[GETVAL Day_count]==[GETVAL Total_month]} then {
+SETVAL Total_cumulative=[expr [GETVAL Day_Total_death]+[GETVAL Mortality_rate]]
+SETVAL Total_mortality=[expr [GETVAL Total_cumulative]/[GETVAL Total_unmber]]
+SETVAL Day_count=0
+SETVAL Day_count_01=0
+}
+
+
+#總累積死亡率
+if {[GETVAL Total_day]==[GETVAL Day_count_Pr]} then {
+#SETVAL Day_count_Pr=0
+#SETVAL Total_cumulative=0
+#SETVAL Mortality_rate=0
+}
+
+}
+
+
+
+

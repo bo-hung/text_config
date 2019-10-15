@@ -1,0 +1,148 @@
+if {[GETVAL FAN_01_SEL]==2 || [GETVAL FAN_01_SEL]==3} then {
+if {[GETVAL FAN_01_SPEED]>250} then {
+SETVAL "風扇NO1=%LOOPPLUS 1"
+} else {
+SETVAL "風扇NO1=0"
+}
+} else {
+SETVAL "風扇NO1=0"
+}
+
+if {[GETVAL FAN_02_SEL]==2 || [GETVAL FAN_02_SEL]==3} then {
+if {[GETVAL FAN_02_SPEED]>200} then {
+SETVAL "風扇NO2=%LOOPPLUS 1"
+} else {
+SETVAL "風扇NO2=0"
+}
+} else {
+SETVAL "風扇NO2=0"
+}
+
+if {[GETVAL FAN_03_SEL]==2 || [GETVAL FAN_03_SEL]==3} then {
+if {[GETVAL FAN_03_SPEED]>200} then {
+SETVAL "風扇NO3=%LOOPPLUS 1"
+} else {
+SETVAL "風扇NO3=0"
+}
+} else {
+SETVAL "風扇NO3=0"
+}
+
+if {[GETVAL FAN_04_SEL]==2 || [GETVAL FAN_04_SEL]==3} then {
+if {[GETVAL FAN_04_SPEED]>200} then {
+SETVAL "風扇NO4=%LOOPPLUS 1"
+} else {
+SETVAL "風扇NO4=0"
+}
+} else {
+SETVAL "風扇NO4=0"
+}
+if {[GETVAL FAN_05_SEL]==2 || [GETVAL FAN_05_SEL]==3} then {
+if {[GETVAL FAN_05_SPEED]>200} then {
+SETVAL "風扇NO5=%LOOPPLUS 1"
+} else {
+SETVAL "風扇NO5=0"
+}
+} else {
+SETVAL "風扇NO5=0"
+}
+
+if {[GETVAL FAN_06_SEL]==2 || [GETVAL FAN_06_SEL]==3} then {
+if {[GETVAL FAN_06_SPEED]>200} then {
+SETVAL "風扇NO6=%LOOPPLUS 1"
+} else {
+SETVAL "風扇NO6=0"
+}
+} else {
+SETVAL "風扇NO6=0"
+}
+
+if {[GETVAL FAN_07_SEL]==2 || [GETVAL FAN_07_SEL]==3} then {
+if {[GETVAL FAN_07_SPEED]>200} then {
+SETVAL "風扇NO7=%LOOPPLUS 1"
+} else {
+SETVAL "風扇NO7=0"
+}
+} else {
+SETVAL "風扇NO7=0"
+}
+
+if {[GETVAL FAN_08_SEL]==2 || [GETVAL FAN_08_SEL]==3} then {
+if {[GETVAL FAN_08_SPEED]>200} then {
+SETVAL "風扇NO8=%LOOPPLUS 1"
+} else {
+SETVAL "風扇NO8=0"
+}
+} else {
+SETVAL "風扇NO8=0"
+}
+
+if {[GETVAL FAN_09_SEL]==2 || [GETVAL FAN_09_SEL]==3} then {
+if {[GETVAL FAN_09_SPEED]>200} then {
+SETVAL "風扇NO9=%LOOPPLUS 1"
+} else {
+SETVAL "風扇NO9=0"
+}
+} else {
+SETVAL "風扇NO9=0"
+}
+
+if {[GETVAL FAN_10_SEL]==2 || [GETVAL FAN_10_SEL]==3} then {
+if {[GETVAL FAN_10_SPEED]>200} then {
+SETVAL "風扇NO10=%LOOPPLUS 1"
+} else {
+SETVAL "風扇NO10=0"
+}
+} else {
+SETVAL "風扇NO10=0"
+}
+
+if {[GETVAL FAN_11_SEL]==2 || [GETVAL FAN_11_SEL]==3} then {
+if {[GETVAL FAN_11_SPEED]>200} then {
+SETVAL "風扇NO11=%LOOPPLUS 1"
+} else {
+SETVAL "風扇NO11=0"
+}
+} else {
+SETVAL "風扇NO11=0"
+}
+
+if {[GETVAL FAN_12_SEL]==2 || [GETVAL FAN_12_SEL]==3} then {
+if {[GETVAL FAN_12_SPEED]>200} then {
+SETVAL "風扇NO12=%LOOPPLUS 1"
+} else {
+SETVAL "風扇NO12=0"
+}
+} else {
+SETVAL "風扇NO12=0"
+}
+
+
+if {[GETVAL PUMP1_CMD]==1} then {
+SETVAL "抽水馬達=%LOOPPLUS 1"
+} else {
+SETVAL "抽水馬達=0"
+}
+
+
+if {[GETVAL PUMP2_CMD]==1} then {
+SETVAL "抽水馬達1=%LOOPPLUS 1"
+} else {
+SETVAL "抽水馬達1=0"
+}
+
+if {[GETVAL PUMP3_CMD]==1} then {
+SETVAL "抽水馬達2=%LOOPPLUS 1"
+} else {
+SETVAL "抽水馬達2=0"
+}
+
+
+if {[GETVAL 11_XL60_DIO_DO1STA]==1} then {
+BWSPOOL "已警報 \r\n"
+SETVAL "總警報=%LOOPPLUS 1"
+
+} else {
+BWSPOOL "未警報 \r\n"
+SETVAL "總警報=0"
+}

@@ -1,0 +1,48 @@
+/* Font Style
+----------------------------------*/
+.e0 {  font-family: "Arial, Helvetica, sans-serif";font-size: 16pt}
+.e1 {  font-family: "Arial, Helvetica, sans-serif";font-size: 14pt}
+.e2 {  font-family: "Arial, Helvetica, sans-serif";font-size: 12pt}
+.e3 {  font-family: "Arial, Helvetica, sans-serif";font-size: 11pt}
+.e4 {  font-family: "Arial, Helvetica, sans-serif";font-size: 10pt}
+.e5 {  font-family: "Arial, Helvetica, sans-serif";font-size: 9pt}
+.e6 {  font-family: "Arial, Helvetica, sans-serif";font-size: 8pt}
+body{ 
+/*    text-align:center; */
+    background-color:#8D8C8F;
+}
+.globeDiv
+{ 
+    background-color: #8D8C8F;      
+}
+.title {
+    background-color:#BCBFD2; color:black;
+    height:32px;text-align:center; line-height:32px;
+    font-family:"Arial, Helvetica, sans-serif";font-size:12pt;  font-weight:bolder;
+    width:auto;
+}
+.bottom {
+    background-color:#BCBFD2; color:black;
+    height:32px;text-align:center; line-height:32px;
+    font-family:"Arial, Helvetica, sans-serif";font-size:12pt;
+}
+
+.contents{
+    background-color: #C9C9CB; color: black;
+    margin-left: auto; margin-right: auto; text-align:center; vertical-align:middle;
+}
+.contents2{
+    background-color: #C9C9CB; color: black;
+    width:100%; text-align:center; vertical-align:middle;   
+}
+
+.wbTable td {
+	background-color: #C9C9CB; color: black;
+	border: #EFEFEF 1px solid;
+}
+
+.ui-jqgrid .ui-jqgrid-view
+{
+    font-size:10pt;
+    font-family: "Arial, Helvetica, sans-serif"
+}

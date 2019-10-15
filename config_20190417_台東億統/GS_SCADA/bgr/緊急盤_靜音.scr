@@ -1,0 +1,5 @@
+if {[GETVAL %AUSERLEVEL]<=98 || [GETVAL %AUSERLEVEL]==100} then {
+GOTO GRAPH=09-風機緊急狀態數據_無靜音.bgr
+} else {
+GOTO GRAPH=09-風機緊急狀態數據.bgr
+}

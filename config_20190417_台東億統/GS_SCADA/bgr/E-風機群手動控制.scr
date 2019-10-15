@@ -1,0 +1,999 @@
+if {[GETVAL FAN_SYSTEM_AM]==1 && [GETVAL firstchange]==1} then {
+
+SETVAL "FAN_GROUP1_STEP=0"
+SETVAL "FAN_GROUP2_STEP=0"
+SETVAL "FAN_GROUP3_STEP=0"
+SETVAL "FAN_GROUP4_STEP=0"
+SETVAL "FAN_GROUP5_STEP=0"
+SETVAL "FAN_GROUP6_STEP=0"
+SETVAL "firstchange=0"
+
+}
+
+if {[GETVAL FAN_SYSTEM_AM]==0} then {
+SETVAL "firstchange=1"
+
+}
+
+
+
+
+
+
+if {[GETVAL GPNO_FAN01]==0} then {
+SETVAL 1-N=1
+
+} else {
+SETVAL 1-N=0
+}
+
+
+
+if {[GETVAL GPNO_FAN01]==1} then {
+SETVAL 1-1=1
+
+} else {
+SETVAL 1-1=0
+}
+
+if {[GETVAL GPNO_FAN01]==2} then {
+SETVAL 1-2=1
+
+} else {
+SETVAL 1-2=0
+}
+
+if {[GETVAL GPNO_FAN01]==4} then {
+SETVAL 1-3=1
+
+} else {
+SETVAL 1-3=0
+}
+
+if {[GETVAL GPNO_FAN01]==8} then {
+SETVAL 1-4=1
+
+} else {
+SETVAL 1-4=0
+}
+
+if {[GETVAL GPNO_FAN01]==16} then {
+SETVAL 1-5=1
+
+} else {
+SETVAL 1-5=0
+}
+
+if {[GETVAL GPNO_FAN01]==32} then {
+SETVAL 1-6=1
+
+} else {
+SETVAL 1-6=0
+}
+
+
+
+
+if {[GETVAL GPNO_FAN02]==0} then {
+SETVAL 2-N=1
+
+} else {
+SETVAL 2-N=0
+}
+
+if {[GETVAL GPNO_FAN02]==1} then {
+SETVAL 2-1=1
+
+} else {
+SETVAL 2-1=0
+}
+
+if {[GETVAL GPNO_FAN02]==2} then {
+SETVAL 2-2=1
+
+} else {
+SETVAL 2-2=0
+}
+
+if {[GETVAL GPNO_FAN02]==4} then {
+SETVAL 2-3=1
+
+} else {
+SETVAL 2-3=0
+}
+
+if {[GETVAL GPNO_FAN02]==8} then {
+SETVAL 2-4=1
+
+} else {
+SETVAL 2-4=0
+}
+
+if {[GETVAL GPNO_FAN02]==16} then {
+SETVAL 2-5=1
+
+} else {
+SETVAL 2-5=0
+}
+
+if {[GETVAL GPNO_FAN02]==32} then {
+SETVAL 2-6=1
+
+} else {
+SETVAL 2-6=0
+}
+
+if {[GETVAL GPNO_FAN03]==0} then {
+SETVAL 3-N=1
+
+} else {
+SETVAL 3-N=0
+}
+
+if {[GETVAL GPNO_FAN03]==1} then {
+SETVAL 3-1=1
+
+} else {
+SETVAL 3-1=0
+}
+
+if {[GETVAL GPNO_FAN03]==2} then {
+SETVAL 3-2=1
+
+} else {
+SETVAL 3-2=0
+}
+
+if {[GETVAL GPNO_FAN03]==4} then {
+SETVAL 3-3=1
+
+} else {
+SETVAL 3-3=0
+}
+
+if {[GETVAL GPNO_FAN03]==8} then {
+SETVAL 3-4=1
+
+} else {
+SETVAL 3-4=0
+}
+
+if {[GETVAL GPNO_FAN03]==16} then {
+SETVAL 3-5=1
+
+} else {
+SETVAL 3-5=0
+}
+
+if {[GETVAL GPNO_FAN03]==32} then {
+SETVAL 3-6=1
+
+} else {
+SETVAL 3-6=0
+}
+
+if {[GETVAL GPNO_FAN04]==0} then {
+SETVAL 4-N=1
+
+} else {
+SETVAL 4-N=0
+}
+if {[GETVAL GPNO_FAN04]==1} then {
+SETVAL 4-1=1
+
+} else {
+SETVAL 4-1=0
+}
+
+if {[GETVAL GPNO_FAN04]==2} then {
+SETVAL 4-2=1
+
+} else {
+SETVAL 4-2=0
+}
+
+if {[GETVAL GPNO_FAN04]==4} then {
+SETVAL 4-3=1
+
+} else {
+SETVAL 4-3=0
+}
+
+if {[GETVAL GPNO_FAN04]==8} then {
+SETVAL 4-4=1
+
+} else {
+SETVAL 4-4=0
+}
+
+if {[GETVAL GPNO_FAN04]==16} then {
+SETVAL 4-5=1
+
+} else {
+SETVAL 4-5=0
+}
+
+if {[GETVAL GPNO_FAN04]==32} then {
+SETVAL 4-6=1
+
+} else {
+SETVAL 4-6=0
+}
+
+if {[GETVAL GPNO_FAN05]==0} then {
+SETVAL 5-N=1
+
+} else {
+SETVAL 5-N=0
+}
+
+if {[GETVAL GPNO_FAN05]==1} then {
+SETVAL 5-1=1
+
+} else {
+SETVAL 5-1=0
+}
+
+if {[GETVAL GPNO_FAN05]==2} then {
+SETVAL 5-2=1
+
+} else {
+SETVAL 5-2=0
+}
+
+if {[GETVAL GPNO_FAN05]==4} then {
+SETVAL 5-3=1
+
+} else {
+SETVAL 5-3=0
+}
+
+if {[GETVAL GPNO_FAN05]==8} then {
+SETVAL 5-4=1
+
+} else {
+SETVAL 5-4=0
+}
+
+if {[GETVAL GPNO_FAN05]==16} then {
+SETVAL 5-5=1
+
+} else {
+SETVAL 5-5=0
+}
+
+if {[GETVAL GPNO_FAN05]==32} then {
+SETVAL 5-6=1
+
+} else {
+SETVAL 5-6=0
+}
+
+if {[GETVAL GPNO_FAN06]==0} then {
+SETVAL 6-N=1
+
+} else {
+SETVAL 6-N=0
+}
+if {[GETVAL GPNO_FAN06]==1} then {
+SETVAL 6-1=1
+
+} else {
+SETVAL 6-1=0
+}
+
+if {[GETVAL GPNO_FAN06]==2} then {
+SETVAL 6-2=1
+
+} else {
+SETVAL 6-2=0
+}
+
+if {[GETVAL GPNO_FAN06]==4} then {
+SETVAL 6-3=1
+
+} else {
+SETVAL 6-3=0
+}
+
+if {[GETVAL GPNO_FAN06]==8} then {
+SETVAL 6-4=1
+
+} else {
+SETVAL 6-4=0
+}
+
+if {[GETVAL GPNO_FAN06]==16} then {
+SETVAL 6-5=1
+
+} else {
+SETVAL 6-5=0
+}
+
+if {[GETVAL GPNO_FAN06]==32} then {
+SETVAL 6-6=1
+
+} else {
+SETVAL 6-6=0
+}
+
+if {[GETVAL GPNO_FAN07]==0} then {
+SETVAL 7-N=1
+
+} else {
+SETVAL 7-N=0
+}
+if {[GETVAL GPNO_FAN07]==1} then {
+SETVAL 7-1=1
+
+} else {
+SETVAL 7-1=0
+}
+
+if {[GETVAL GPNO_FAN07]==2} then {
+SETVAL 7-2=1
+
+} else {
+SETVAL 7-2=0
+}
+
+if {[GETVAL GPNO_FAN07]==4} then {
+SETVAL 7-3=1
+
+} else {
+SETVAL 7-3=0
+}
+
+if {[GETVAL GPNO_FAN07]==8} then {
+SETVAL 7-4=1
+
+} else {
+SETVAL 7-4=0
+}
+
+if {[GETVAL GPNO_FAN07]==16} then {
+SETVAL 7-5=1
+
+} else {
+SETVAL 7-5=0
+}
+
+if {[GETVAL GPNO_FAN07]==32} then {
+SETVAL 7-6=1
+
+} else {
+SETVAL 7-6=0
+}
+
+if {[GETVAL GPNO_FAN08]==0} then {
+SETVAL 8-N=1
+
+} else {
+SETVAL 8-N=0
+}
+
+if {[GETVAL GPNO_FAN08]==1} then {
+SETVAL 8-1=1
+
+} else {
+SETVAL 8-1=0
+}
+
+if {[GETVAL GPNO_FAN08]==2} then {
+SETVAL 8-2=1
+
+} else {
+SETVAL 8-2=0
+}
+
+if {[GETVAL GPNO_FAN08]==4} then {
+SETVAL 8-3=1
+
+} else {
+SETVAL 8-3=0
+}
+
+if {[GETVAL GPNO_FAN08]==8} then {
+SETVAL 8-4=1
+
+} else {
+SETVAL 8-4=0
+}
+
+if {[GETVAL GPNO_FAN08]==16} then {
+SETVAL 8-5=1
+
+} else {
+SETVAL 8-5=0
+}
+
+if {[GETVAL GPNO_FAN08]==32} then {
+SETVAL 8-6=1
+
+} else {
+SETVAL 8-6=0
+}
+
+if {[GETVAL GPNO_FAN09]==0} then {
+SETVAL 9-N=1
+
+} else {
+SETVAL 9-N=0
+}
+
+if {[GETVAL GPNO_FAN09]==1} then {
+SETVAL 9-1=1
+
+} else {
+SETVAL 9-1=0
+}
+
+if {[GETVAL GPNO_FAN09]==2} then {
+SETVAL 9-2=1
+
+} else {
+SETVAL 9-2=0
+}
+
+if {[GETVAL GPNO_FAN09]==4} then {
+SETVAL 9-3=1
+
+} else {
+SETVAL 9-3=0
+}
+
+if {[GETVAL GPNO_FAN09]==8} then {
+SETVAL 9-4=1
+
+} else {
+SETVAL 9-4=0
+}
+
+if {[GETVAL GPNO_FAN09]==16} then {
+SETVAL 9-5=1
+
+} else {
+SETVAL 9-5=0
+}
+
+if {[GETVAL GPNO_FAN09]==32} then {
+SETVAL 9-6=1
+
+} else {
+SETVAL 9-6=0
+}
+
+if {[GETVAL GPNO_FAN10]==0} then {
+SETVAL 10-N=1
+
+} else {
+SETVAL 10-N=0
+}
+
+if {[GETVAL GPNO_FAN10]==1} then {
+SETVAL 10-1=1
+
+} else {
+SETVAL 10-1=0
+}
+
+if {[GETVAL GPNO_FAN10]==2} then {
+SETVAL 10-2=1
+
+} else {
+SETVAL 10-2=0
+}
+
+if {[GETVAL GPNO_FAN10]==4} then {
+SETVAL 10-3=1
+
+} else {
+SETVAL 10-3=0
+}
+
+if {[GETVAL GPNO_FAN10]==8} then {
+SETVAL 10-4=1
+
+} else {
+SETVAL 10-4=0
+}
+
+if {[GETVAL GPNO_FAN10]==16} then {
+SETVAL 10-5=1
+
+} else {
+SETVAL 10-5=0
+}
+
+if {[GETVAL GPNO_FAN10]==32} then {
+SETVAL 10-6=1
+
+} else {
+SETVAL 10-6=0
+}
+
+if {[GETVAL GPNO_FAN11]==0} then {
+SETVAL 11-N=1
+
+} else {
+SETVAL 11-N=0
+}
+
+if {[GETVAL GPNO_FAN11]==1} then {
+SETVAL 11-1=1
+
+} else {
+SETVAL 11-1=0
+}
+
+if {[GETVAL GPNO_FAN11]==2} then {
+SETVAL 11-2=1
+
+} else {
+SETVAL 11-2=0
+}
+
+if {[GETVAL GPNO_FAN11]==4} then {
+SETVAL 11-3=1
+
+} else {
+SETVAL 11-3=0
+}
+
+if {[GETVAL GPNO_FAN11]==8} then {
+SETVAL 11-4=1
+
+} else {
+SETVAL 11-4=0
+}
+
+if {[GETVAL GPNO_FAN11]==16} then {
+SETVAL 11-5=1
+
+} else {
+SETVAL 11-5=0
+}
+
+if {[GETVAL GPNO_FAN11]==32} then {
+SETVAL 11-6=1
+
+} else {
+SETVAL 11-6=0
+}
+
+if {[GETVAL GPNO_FAN12]==1} then {
+SETVAL 12-1=1
+
+} else {
+SETVAL 12-1=0
+}
+
+if {[GETVAL GPNO_FAN12]==0} then {
+SETVAL 12-N=1
+
+} else {
+SETVAL 12-N=0
+}
+
+if {[GETVAL GPNO_FAN12]==2} then {
+SETVAL 12-2=1
+
+} else {
+SETVAL 12-2=0
+}
+
+if {[GETVAL GPNO_FAN12]==4} then {
+SETVAL 12-3=1
+
+} else {
+SETVAL 12-3=0
+}
+
+if {[GETVAL GPNO_FAN12]==8} then {
+SETVAL 12-4=1
+
+} else {
+SETVAL 12-4=0
+}
+
+if {[GETVAL GPNO_FAN12]==16} then {
+SETVAL 12-5=1
+
+} else {
+SETVAL 12-5=0
+}
+
+if {[GETVAL GPNO_FAN12]==32} then {
+SETVAL 12-6=1
+
+} else {
+SETVAL 12-6=0
+}
+
+if {[GETVAL GPNO_FAN13]==1} then {
+SETVAL 13-1=1
+
+} else {
+SETVAL 13-1=0
+}
+
+if {[GETVAL GPNO_FAN13]==2} then {
+SETVAL 13-2=1
+
+} else {
+SETVAL 13-2=0
+}
+
+if {[GETVAL GPNO_FAN13]==4} then {
+SETVAL 13-3=1
+
+} else {
+SETVAL 13-3=0
+}
+
+if {[GETVAL GPNO_FAN13]==8} then {
+SETVAL 13-4=1
+
+} else {
+SETVAL 13-4=0
+}
+
+if {[GETVAL GPNO_FAN13]==16} then {
+SETVAL 13-5=1
+
+} else {
+SETVAL 13-5=0
+}
+
+if {[GETVAL GPNO_FAN13]==32} then {
+SETVAL 13-6=1
+
+} else {
+SETVAL 13-6=0
+}
+if {[GETVAL GPNO_FAN14]==1} then {
+SETVAL 14-1=1
+
+} else {
+SETVAL 14-1=0
+}
+
+if {[GETVAL GPNO_FAN14]==2} then {
+SETVAL 14-2=1
+
+} else {
+SETVAL 14-2=0
+}
+
+if {[GETVAL GPNO_FAN14]==4} then {
+SETVAL 14-3=1
+
+} else {
+SETVAL 14-3=0
+}
+
+if {[GETVAL GPNO_FAN14]==8} then {
+SETVAL 14-4=1
+
+} else {
+SETVAL 14-4=0
+}
+
+if {[GETVAL GPNO_FAN14]==16} then {
+SETVAL 14-5=1
+
+} else {
+SETVAL 14-5=0
+}
+
+if {[GETVAL GPNO_FAN14]==32} then {
+SETVAL 14-6=1
+
+} else {
+SETVAL 14-6=0
+}
+
+if {[GETVAL GPNO_FAN15]==1} then {
+SETVAL 15-1=1
+
+} else {
+SETVAL 15-1=0
+}
+
+if {[GETVAL GPNO_FAN15]==2} then {
+SETVAL 15-2=1
+
+} else {
+SETVAL 15-2=0
+}
+
+if {[GETVAL GPNO_FAN15]==4} then {
+SETVAL 15-3=1
+
+} else {
+SETVAL 15-3=0
+}
+
+if {[GETVAL GPNO_FAN15]==8} then {
+SETVAL 15-4=1
+
+} else {
+SETVAL 15-4=0
+}
+
+if {[GETVAL GPNO_FAN15]==16} then {
+SETVAL 15-5=1
+
+} else {
+SETVAL 15-5=0
+}
+
+if {[GETVAL GPNO_FAN15]==32} then {
+SETVAL 15-6=1
+
+} else {
+SETVAL 15-6=0
+}
+
+if {[GETVAL GPNO_FAN16]==1} then {
+SETVAL 16-1=1
+
+} else {
+SETVAL 16-1=0
+}
+
+if {[GETVAL GPNO_FAN16]==2} then {
+SETVAL 16-2=1
+
+} else {
+SETVAL 16-2=0
+}
+
+if {[GETVAL GPNO_FAN16]==4} then {
+SETVAL 16-3=1
+
+} else {
+SETVAL 16-3=0
+}
+
+if {[GETVAL GPNO_FAN16]==8} then {
+SETVAL 16-4=1
+
+} else {
+SETVAL 16-4=0
+}
+
+if {[GETVAL GPNO_FAN16]==16} then {
+SETVAL 16-5=1
+
+} else {
+SETVAL 16-5=0
+}
+
+if {[GETVAL GPNO_FAN16]==32} then {
+SETVAL 16-6=1
+
+} else {
+SETVAL 16-6=0
+}
+
+if {[GETVAL GPNO_FAN17]==1} then {
+SETVAL 17-1=1
+
+} else {
+SETVAL 17-1=0
+}
+
+if {[GETVAL GPNO_FAN17]==2} then {
+SETVAL 17-2=1
+
+} else {
+SETVAL 17-2=0
+}
+
+if {[GETVAL GPNO_FAN17]==4} then {
+SETVAL 17-3=1
+
+} else {
+SETVAL 17-3=0
+}
+
+if {[GETVAL GPNO_FAN17]==8} then {
+SETVAL 17-4=1
+
+} else {
+SETVAL 17-4=0
+}
+
+if {[GETVAL GPNO_FAN17]==16} then {
+SETVAL 17-5=1
+
+} else {
+SETVAL 17-5=0
+}
+
+if {[GETVAL GPNO_FAN17]==32} then {
+SETVAL 17-6=1
+
+} else {
+SETVAL 17-6=0
+}
+
+if {[GETVAL GPNO_FAN18]==1} then {
+SETVAL 18-1=1
+
+} else {
+SETVAL 18-1=0
+}
+
+if {[GETVAL GPNO_FAN18]==2} then {
+SETVAL 18-2=1
+
+} else {
+SETVAL 18-2=0
+}
+
+if {[GETVAL GPNO_FAN18]==4} then {
+SETVAL 18-3=1
+
+} else {
+SETVAL 18-3=0
+}
+
+if {[GETVAL GPNO_FAN18]==8} then {
+SETVAL 18-4=1
+
+} else {
+SETVAL 18-4=0
+}
+
+if {[GETVAL GPNO_FAN18]==16} then {
+SETVAL 18-5=1
+
+} else {
+SETVAL 18-5=0
+}
+
+if {[GETVAL GPNO_FAN18]==32} then {
+SETVAL 18-6=1
+
+} else {
+SETVAL 18-6=0
+}
+
+if {[GETVAL GPNO_FAN01]==0} then {
+SETVAL 1-N=1
+
+} else {
+SETVAL 1-N=0
+}
+
+if {[GETVAL GPNO_FAN02]==0} then {
+SETVAL 2-N=1
+
+} else {
+SETVAL 2-N=0
+}
+
+if {[GETVAL GPNO_FAN03]==0} then {
+SETVAL 3-N=1
+
+} else {
+SETVAL 3-N=0
+}
+
+if {[GETVAL GPNO_FAN04]==0} then {
+SETVAL 4-N=1
+
+} else {
+SETVAL 4-N=0
+}
+
+if {[GETVAL GPNO_FAN05]==0} then {
+SETVAL 5-N=1
+
+} else {
+SETVAL 5-N=0
+}
+
+if {[GETVAL GPNO_FAN06]==0} then {
+SETVAL 6-N=1
+
+} else {
+SETVAL 6-N=0
+}
+
+if {[GETVAL GPNO_FAN07]==0} then {
+SETVAL 7-N=1
+
+} else {
+SETVAL 7-N=0
+}
+
+if {[GETVAL GPNO_FAN08]==0} then {
+SETVAL 8-N=1
+
+} else {
+SETVAL 8-N=0
+}
+
+if {[GETVAL GPNO_FAN09]==0} then {
+SETVAL 9-N=1
+
+} else {
+SETVAL 9-N=0
+}
+
+if {[GETVAL GPNO_FAN10]==0} then {
+SETVAL 10-N=1
+
+} else {
+SETVAL 10-N=0
+}
+
+if {[GETVAL GPNO_FAN11]==0} then {
+SETVAL 11-N=1
+
+} else {
+SETVAL 11-N=0
+}
+
+if {[GETVAL GPNO_FAN12]==0} then {
+SETVAL 12-N=1
+
+} else {
+SETVAL 12-N=0
+}
+
+if {[GETVAL GPNO_FAN13]==0} then {
+SETVAL 13-N=1
+
+} else {
+SETVAL 13-N=0
+}
+
+if {[GETVAL GPNO_FAN14]==0} then {
+SETVAL 14-N=1
+
+} else {
+SETVAL 14-N=0
+}
+
+if {[GETVAL GPNO_FAN15]==0} then {
+SETVAL 15-N=1
+
+} else {
+SETVAL 15-N=0
+}
+
+if {[GETVAL GPNO_FAN16]==0} then {
+SETVAL 16-N=1
+
+} else {
+SETVAL 16-N=0
+}
+
+if {[GETVAL GPNO_FAN17]==0} then {
+SETVAL 17-N=1
+
+} else {
+SETVAL 17-N=0
+}
+
+if {[GETVAL GPNO_FAN18]==0} then {
+SETVAL 18-N=1
+
+} else {
+SETVAL 18-N=0
+}
+
+
+
+
+if {[GETVAL FAN_GROUP1_STEP]==0} then {
+SETVAL 1¸s0¬q=1
+
+} else {
+SETVAL 1¸s0¬q=0
+}
+

@@ -1,0 +1,4 @@
+if {[GETVAL PS]==1} then {
+SETVAL PS=0
+DSPPOPUPTOP ºò«æ´_Âk.DSP
+}

@@ -1,0 +1,11 @@
+#if {[GETVAL %AUSERLEVEL]<=98 || [GETVAL %AUSERLEVEL]==100} then {
+#GOTO GRAPH=E-風機群手動控制_無隔離.bgr
+#} else {
+#GOTO GRAPH=E-風機群手動控制.bgr
+#}
+
+if {[GETVAL %AUSERLEVEL]<=98 || [GETVAL %AUSERLEVEL]==100} then {
+GOTO GRAPH=E-風機群手動控制_DEMO_3_無隔離.bgr
+} else {
+GOTO GRAPH=E-風機群手動控制_DEMO_3.bgr
+}

@@ -1,0 +1,3 @@
+BWSPOOL "step 1 \r\n"
+MCREXEC «öÁäF4.MCR
+BWSPOOL "step 2 \r\n"

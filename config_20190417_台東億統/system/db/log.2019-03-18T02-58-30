@@ -1,0 +1,37 @@
+2019-03-15T16:59:32.709+0800 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2019-03-15T16:59:32.718+0800 I STORAGE  [thread1] Service running
+2019-03-15T16:59:32.727+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7852 port=52179 dbpath=C:\WebAccess\Node\config\system\db 64-bit host=BoHong
+2019-03-15T16:59:32.727+0800 I CONTROL  [initandlisten] targetMinOS: Windows Vista/Windows Server 2008
+2019-03-15T16:59:32.728+0800 I CONTROL  [initandlisten] db version v3.2.13-25-g40d309b
+2019-03-15T16:59:32.728+0800 I CONTROL  [initandlisten] git version: 40d309be939eea757c09d4895b22c24905aa8b05
+2019-03-15T16:59:32.728+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2019-03-15T16:59:32.728+0800 I CONTROL  [initandlisten] modules: none
+2019-03-15T16:59:32.728+0800 I CONTROL  [initandlisten] build environment:
+2019-03-15T16:59:32.728+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2019-03-15T16:59:32.728+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-03-15T16:59:32.728+0800 I CONTROL  [initandlisten] options: { net: { port: 52179 }, service: true, storage: { dbPath: "C:\WebAccess\Node\config\system\db", engine: "mmapv1" }, systemLog: { destination: "file", path: "C:\WebAccess\Node\config\system\db\log", quiet: true } }
+2019-03-15T16:59:32.785+0800 I JOURNAL  [initandlisten] journal dir=C:\WebAccess\Node\config\system\db\journal
+2019-03-15T16:59:32.786+0800 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2019-03-15T16:59:32.800+0800 I JOURNAL  [durability] Durability thread started
+2019-03-15T16:59:32.804+0800 I JOURNAL  [journal writer] Journal writer thread started
+2019-03-15T16:59:32.976+0800 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2019-03-15T16:59:33.460+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/WebAccess/Node/config/system/db/diagnostic.data'
+2019-03-15T16:59:33.460+0800 I NETWORK  [initandlisten] waiting for connections on port 52179
+2019-03-15T19:05:14.877+0800 I CONTROL  [serviceShutdown] got SERVICE_CONTROL_PRESHUTDOWN request from Windows Service Control Manager, will terminate after current cmd ends
+2019-03-15T19:05:14.884+0800 I FTDC     [serviceStopWorker] Shutting down full-time diagnostic data capture
+2019-03-15T19:05:14.891+0800 I CONTROL  [serviceStopWorker] now exiting
+2019-03-15T19:05:14.891+0800 I NETWORK  [serviceStopWorker] shutdown: going to close listening sockets...
+2019-03-15T19:05:14.891+0800 I NETWORK  [serviceStopWorker] closing listening socket: 748
+2019-03-15T19:05:14.891+0800 I NETWORK  [serviceStopWorker] shutdown: going to flush diaglog...
+2019-03-15T19:05:14.891+0800 I NETWORK  [serviceStopWorker] shutdown: going to close sockets...
+2019-03-15T19:05:14.892+0800 I STORAGE  [serviceStopWorker] shutdown: waiting for fs preallocator...
+2019-03-15T19:05:14.892+0800 I STORAGE  [serviceStopWorker] shutdown: final commit...
+2019-03-15T19:05:14.896+0800 I JOURNAL  [serviceStopWorker] journalCleanup...
+2019-03-15T19:05:14.896+0800 I JOURNAL  [serviceStopWorker] removeJournalFiles
+2019-03-15T19:05:14.897+0800 I JOURNAL  [serviceStopWorker] Terminating durability thread ...
+2019-03-15T19:05:14.996+0800 I JOURNAL  [journal writer] Journal writer thread stopped
+2019-03-15T19:05:14.996+0800 I JOURNAL  [durability] Durability thread stopped
+2019-03-15T19:05:14.997+0800 I STORAGE  [serviceStopWorker] shutdown: closing all files...
+2019-03-15T19:05:14.998+0800 I STORAGE  [serviceStopWorker] closeAllFiles() finished
+2019-03-15T19:05:14.998+0800 I STORAGE  [serviceStopWorker] shutdown: removing fs lock...
+2019-03-15T19:05:14.998+0800 I CONTROL  [serviceStopWorker] dbexit:  rc: 49

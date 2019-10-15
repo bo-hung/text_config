@@ -1,0 +1,26 @@
+if {[GETVAL PS]==0} then {
+
+BWSPOOL "Step1 \r\n"
+if {[GETVAL %AUSERLEVEL]<1} then {
+BWSPOOL "Step2 \r\n"
+MCREXEC LONGINBOX.MCR
+SETVAL PS=1
+BWSPOOL "Step3 \r\n"
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

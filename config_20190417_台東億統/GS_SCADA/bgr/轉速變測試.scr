@@ -1,0 +1,23 @@
+
+if {[GETVAL 水簾]==1} then {
+
+SETVAL "抽水馬達=%LOOPPLUS 1"
+
+
+} else {
+
+SETVAL "抽水馬達=0"
+
+}
+
+
+if {[GETVAL 風扇]==1} then {
+
+SETVAL "風扇運轉=%LOOPPLUS 1"
+
+
+} else {
+
+SETVAL "風扇運轉=0"
+
+}

@@ -1,0 +1,15 @@
+2018-11-28T09:20:02.292+0800 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2018-11-28T09:20:02.515+0800 I STORAGE  [thread1] Service running
+2018-11-28T09:20:02.516+0800 I CONTROL  [initandlisten] MongoDB starting : pid=9232 port=52179 dbpath=C:\WebAccess\Node\config\system\db 64-bit host=DESKTOP-3LELU4T
+2018-11-28T09:20:02.516+0800 I CONTROL  [initandlisten] targetMinOS: Windows Vista/Windows Server 2008
+2018-11-28T09:20:02.516+0800 I CONTROL  [initandlisten] db version v3.2.13-25-g40d309b
+2018-11-28T09:20:02.516+0800 I CONTROL  [initandlisten] git version: 40d309be939eea757c09d4895b22c24905aa8b05
+2018-11-28T09:20:02.517+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-11-28T09:20:02.517+0800 I CONTROL  [initandlisten] modules: none
+2018-11-28T09:20:02.517+0800 I CONTROL  [initandlisten] build environment:
+2018-11-28T09:20:02.518+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-11-28T09:20:02.518+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-11-28T09:20:02.518+0800 I CONTROL  [initandlisten] options: { net: { port: 52179 }, service: true, storage: { dbPath: "C:\WebAccess\Node\config\system\db", engine: "mmapv1" }, systemLog: { destination: "file", path: "C:\WebAccess\Node\config\system\db\log", quiet: true } }
+2018-11-28T09:20:02.519+0800 E NETWORK  [initandlisten] listen(): bind() failed errno:10048 一次只能用一個通訊端位址 (通訊協定/網路位址/連接埠)。 for socket: 0.0.0.0:52179
+2018-11-28T09:20:02.519+0800 E STORAGE  [initandlisten] Failed to set up sockets during startup.
+2018-11-28T09:20:02.534+0800 I CONTROL  [serviceStopWorker] dbexit:  rc: 49

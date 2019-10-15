@@ -1,0 +1,28 @@
+2018-12-16T18:48:47.770+0800 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2018-12-16T18:48:47.772+0800 I STORAGE  [thread1] Service running
+2018-12-16T18:48:47.773+0800 I CONTROL  [initandlisten] MongoDB starting : pid=5416 port=52179 dbpath=C:\WebAccess\Node\config\system\db 64-bit host=DESKTOP-3LELU4T
+2018-12-16T18:48:47.773+0800 I CONTROL  [initandlisten] targetMinOS: Windows Vista/Windows Server 2008
+2018-12-16T18:48:47.773+0800 I CONTROL  [initandlisten] db version v3.2.13-25-g40d309b
+2018-12-16T18:48:47.773+0800 I CONTROL  [initandlisten] git version: 40d309be939eea757c09d4895b22c24905aa8b05
+2018-12-16T18:48:47.773+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-12-16T18:48:47.773+0800 I CONTROL  [initandlisten] modules: none
+2018-12-16T18:48:47.774+0800 I CONTROL  [initandlisten] build environment:
+2018-12-16T18:48:47.774+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-12-16T18:48:47.774+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-12-16T18:48:47.774+0800 I CONTROL  [initandlisten] options: { net: { port: 52179 }, service: true, storage: { dbPath: "C:\WebAccess\Node\config\system\db", engine: "mmapv1" }, systemLog: { destination: "file", path: "C:\WebAccess\Node\config\system\db\log", quiet: true } }
+2018-12-16T18:48:47.778+0800 W -        [initandlisten] Detected unclean shutdown - C:\WebAccess\Node\config\system\db\mongod.lock is not empty.
+2018-12-16T18:48:47.795+0800 I JOURNAL  [initandlisten] journal dir=C:\WebAccess\Node\config\system\db\journal
+2018-12-16T18:48:47.796+0800 I JOURNAL  [initandlisten] recover begin
+2018-12-16T18:48:47.797+0800 I JOURNAL  [initandlisten] info no lsn file in journal/ directory
+2018-12-16T18:48:47.797+0800 I JOURNAL  [initandlisten] recover lsn: 0
+2018-12-16T18:48:47.797+0800 I JOURNAL  [initandlisten] recover C:\WebAccess\Node\config\system\db\journal\j._0
+2018-12-16T18:48:47.798+0800 I JOURNAL  [initandlisten] recover applying initial journal section with sequence number 1
+2018-12-16T18:48:47.812+0800 I JOURNAL  [initandlisten] recover cleaning up
+2018-12-16T18:48:47.812+0800 I JOURNAL  [initandlisten] removeJournalFiles
+2018-12-16T18:48:47.818+0800 I JOURNAL  [initandlisten] recover done
+2018-12-16T18:48:47.841+0800 I JOURNAL  [durability] Durability thread started
+2018-12-16T18:48:47.847+0800 I JOURNAL  [journal writer] Journal writer thread started
+2018-12-16T18:48:47.974+0800 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2018-12-16T18:48:48.368+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/WebAccess/Node/config/system/db/diagnostic.data'
+2018-12-16T18:48:48.369+0800 I NETWORK  [initandlisten] waiting for connections on port 52179
+2018-12-16T18:48:49.010+0800 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK

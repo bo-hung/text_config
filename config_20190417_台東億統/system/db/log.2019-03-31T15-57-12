@@ -1,0 +1,19 @@
+2019-03-18T10:58:30.559+0800 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2019-03-18T10:58:30.623+0800 I STORAGE  [thread1] Service running
+2019-03-18T10:58:30.623+0800 I CONTROL  [initandlisten] MongoDB starting : pid=5020 port=52179 dbpath=C:\WebAccess\Node\config\system\db 64-bit host=BoHong
+2019-03-18T10:58:30.624+0800 I CONTROL  [initandlisten] targetMinOS: Windows Vista/Windows Server 2008
+2019-03-18T10:58:30.624+0800 I CONTROL  [initandlisten] db version v3.2.13-25-g40d309b
+2019-03-18T10:58:30.624+0800 I CONTROL  [initandlisten] git version: 40d309be939eea757c09d4895b22c24905aa8b05
+2019-03-18T10:58:30.625+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2019-03-18T10:58:30.625+0800 I CONTROL  [initandlisten] modules: none
+2019-03-18T10:58:30.625+0800 I CONTROL  [initandlisten] build environment:
+2019-03-18T10:58:30.626+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2019-03-18T10:58:30.626+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-03-18T10:58:30.626+0800 I CONTROL  [initandlisten] options: { net: { port: 52179 }, service: true, storage: { dbPath: "C:\WebAccess\Node\config\system\db", engine: "mmapv1" }, systemLog: { destination: "file", path: "C:\WebAccess\Node\config\system\db\log", quiet: true } }
+2019-03-18T10:58:30.684+0800 I JOURNAL  [initandlisten] journal dir=C:\WebAccess\Node\config\system\db\journal
+2019-03-18T10:58:30.687+0800 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2019-03-18T10:58:30.719+0800 I JOURNAL  [durability] Durability thread started
+2019-03-18T10:58:30.736+0800 I JOURNAL  [journal writer] Journal writer thread started
+2019-03-18T10:58:30.877+0800 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2019-03-18T10:58:31.598+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/WebAccess/Node/config/system/db/diagnostic.data'
+2019-03-18T10:58:31.598+0800 I NETWORK  [initandlisten] waiting for connections on port 52179

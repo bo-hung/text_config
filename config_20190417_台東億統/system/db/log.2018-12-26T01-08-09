@@ -1,0 +1,19 @@
+2018-12-20T10:17:26.879+0800 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2018-12-20T10:17:26.888+0800 I STORAGE  [thread1] Service running
+2018-12-20T10:17:26.889+0800 I CONTROL  [initandlisten] MongoDB starting : pid=5740 port=52179 dbpath=C:\WebAccess\Node\config\system\db 64-bit host=DESKTOP-3LELU4T
+2018-12-20T10:17:26.889+0800 I CONTROL  [initandlisten] targetMinOS: Windows Vista/Windows Server 2008
+2018-12-20T10:17:26.889+0800 I CONTROL  [initandlisten] db version v3.2.13-25-g40d309b
+2018-12-20T10:17:26.890+0800 I CONTROL  [initandlisten] git version: 40d309be939eea757c09d4895b22c24905aa8b05
+2018-12-20T10:17:26.890+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-12-20T10:17:26.890+0800 I CONTROL  [initandlisten] modules: none
+2018-12-20T10:17:26.890+0800 I CONTROL  [initandlisten] build environment:
+2018-12-20T10:17:26.890+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-12-20T10:17:26.890+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-12-20T10:17:26.890+0800 I CONTROL  [initandlisten] options: { net: { port: 52179 }, service: true, storage: { dbPath: "C:\WebAccess\Node\config\system\db", engine: "mmapv1" }, systemLog: { destination: "file", path: "C:\WebAccess\Node\config\system\db\log", quiet: true } }
+2018-12-20T10:17:26.923+0800 I JOURNAL  [initandlisten] journal dir=C:\WebAccess\Node\config\system\db\journal
+2018-12-20T10:17:26.924+0800 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2018-12-20T10:17:26.965+0800 I JOURNAL  [durability] Durability thread started
+2018-12-20T10:17:26.966+0800 I JOURNAL  [journal writer] Journal writer thread started
+2018-12-20T10:17:27.120+0800 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2018-12-20T10:17:27.708+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/WebAccess/Node/config/system/db/diagnostic.data'
+2018-12-20T10:17:27.709+0800 I NETWORK  [initandlisten] waiting for connections on port 52179
